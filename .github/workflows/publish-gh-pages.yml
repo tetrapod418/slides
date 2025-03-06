@@ -18,6 +18,9 @@ jobs:
       - run: npm ci
       - run: |
           cd ${{ github.workspace }}
+          mkdir public/20250309_kinoko
+      - run: |
+          cd ${{ github.workspace }}
           npm run build
       - run: cp -R ${{ github.workspace }}/images ${{ github.workspace }}/public/images
       - run: cp -R ${{ github.workspace }}/theme ${{ github.workspace }}/public/theme
