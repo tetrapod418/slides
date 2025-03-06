@@ -1,0 +1,27 @@
+name: Publish GitHub Pages
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: cd ${{ github.workspace }}
+             npm run marp
+             cp -R ${{ github.workspace }}/images ${{ github.workspace }}/public/images
+             cp -R ${{ github.workspace }}/theme ${{ github.workspace }}/public/theme
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./public
+          publish_branch: gh-pages
