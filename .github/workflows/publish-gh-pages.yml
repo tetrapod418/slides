@@ -16,10 +16,11 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: cd ${{ github.workspace }}
-             npm run marp
-             cp -R ${{ github.workspace }}/images ${{ github.workspace }}/public/images
-             cp -R ${{ github.workspace }}/theme ${{ github.workspace }}/public/theme
+      - run: |
+          cd ${{ github.workspace }}
+          npm run marp
+      - run: cp -R ${{ github.workspace }}/images ${{ github.workspace }}/public/images
+      - run: cp -R ${{ github.workspace }}/theme ${{ github.workspace }}/public/theme
       - uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
