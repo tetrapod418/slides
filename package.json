@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "marp && mv ./public/20050309-kinoko.html ./public/20050309-kinoko/index.html"
+    "build": "marp && mv ./public/20050309_kinoko.html ./public/20050309_kinoko/index.html"
   },
   "keywords": [],
   "author": "",
