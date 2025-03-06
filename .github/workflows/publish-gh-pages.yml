@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: |
           cd ${{ github.workspace }}
-          npm run marp
+          npm run build
       - run: cp -R ${{ github.workspace }}/images ${{ github.workspace }}/public/images
       - run: cp -R ${{ github.workspace }}/theme ${{ github.workspace }}/public/theme
       - uses: peaceiris/actions-gh-pages@v3
