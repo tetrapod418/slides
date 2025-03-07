@@ -21,7 +21,7 @@ jobs:
           npm run build
 #      - run: cp -R ${{ github.workspace }}/images ${{ github.workspace }}/public/
 #      - run: cp -R ${{ github.workspace }}/theme ${{ github.workspace }}/public/
-      - run: mv ${{ github.workspace }}/public/slides/index.html ${{ github.workspace }}/public/
+#      - run: mv ${{ github.workspace }}/public/slides/index.html ${{ github.workspace }}/public/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
