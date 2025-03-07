@@ -1,4 +1,4 @@
 {
     "inputDir": "./src/",
-    "output": "./public/slides/"
+    "output": "./public/"
 }
