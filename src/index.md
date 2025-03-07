@@ -1,5 +1,9 @@
+---
+marp: true
+title: README
+---
 @tetrapod418
-![jnkykn](./images/jnkykn.jpg)
+![bg left:55%](./images/jnkykn.jpg)
 
 ## SNS
 - X: [@jnkykn](https://x.com/jnkykn)
@@ -9,4 +13,4 @@
 
 ## Slides
 - 2025-03-09 エンジニアがこの先生きのこるためのカンファレンス2025
-<br>  [引き際は自分で決める！～究極の選択と還暦で定年の無い企業に転職した話～](./slides/20250309_kinoko.html)
+<br>  [引き際は自分で決める！～究極の選択と還暦で定年の無い企業に転職した話～](https://tetrapod418.github.io/slides/20250309_kinoko/)
