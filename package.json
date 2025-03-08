@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "marp"
+    "build": "marp",
+    "pdf": "marp --pdf"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@marp-team/marp-cli": "^4.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetrapod418/slides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tetrapod418/slides/issues"
+  },
+  "homepage": "https://github.com/tetrapod418/slides#readme"
 }
