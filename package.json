@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "marp",
-    "pdf": "marp --pdf"
+    "pdf": "marp --pdf",
+    "getimage": "marp --image jpg"
   },
   "keywords": [],
   "author": "",
