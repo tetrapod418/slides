@@ -1,4 +1,6 @@
 {
     "inputDir": "./src/",
-    "output": "./public/"
+    "output": "./public/",
+    "lang": "ja-JP",
+    "themeSet": ["./theme/mytheme.css"]
 }
