@@ -5,12 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "marp && mv ./public/20250309_kinoko.html ./public/20250309_kinoko/index.html && mv ./public/20260628_kinoko.html ./public/20260628_kinoko/index.html"
+    "build": "marp && mv ./public/20250309_kinoko.html ./public/20250309_kinoko/index.html && mv ./public/20260628_kinoko.html ./public/20260628_kinoko/index.html",
+    "pdf": "marp --pdf",
+    "getimage": "marp --image jpg"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@marp-team/marp-cli": "^4.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetrapod418/slides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tetrapod418/slides/issues"
+  },
+  "homepage": "https://github.com/tetrapod418/slides#readme"
 }
