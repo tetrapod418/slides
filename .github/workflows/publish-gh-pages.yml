@@ -23,6 +23,10 @@ jobs:
       - run: |
           cd ${{ github.workspace }}
           npm run build
+      - run: |
+          cd ${{ github.workspace }}
+          cp -R public/images public/20250309_kinoko/
+          cp -R public/images public/20260628_kinoko/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
