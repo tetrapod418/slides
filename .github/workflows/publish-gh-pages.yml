@@ -18,8 +18,8 @@ jobs:
       - run: npm ci
       - run: |
           cd ${{ github.workspace }}
-          mkdir public/20250309_kinoko
-          mkdir public/20260628_kinoko
+          mkdir -p public/20250309_kinoko
+          mkdir -p public/20260628_kinoko
       - run: |
           cd ${{ github.workspace }}
           npm run build
